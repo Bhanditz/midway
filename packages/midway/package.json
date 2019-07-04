@@ -9,7 +9,9 @@
     "lint": "../../node_modules/.bin/tslint --format prose -c ../../tslint.json src/**/*.ts test/**/*.ts",
     "test": "midway-bin test --ts",
     "cov": "midway-bin cov --ts",
-    "ci": "npm run test"
+    "ci": "npm run test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "midway",
@@ -30,7 +32,8 @@
     "egg-cluster": "^1.17.0",
     "injection": "^0.6.5",
     "midway-core": "^0.6.5",
-    "midway-web": "^0.6.5"
+    "midway-web": "^0.6.5",
+    "snyk": "^1.189.0"
   },
   "files": [
     "bin",
@@ -46,5 +49,6 @@
   "repository": {
     "type": "git",
     "url": "http://github.com/midwayjs/midway.git"
-  }
+  },
+  "snyk": true
 }

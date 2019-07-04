@@ -10,7 +10,9 @@
     "lint": "../../node_modules/.bin/tslint --format prose -c ../../tslint.json src/**/*.ts test/**/*.ts",
     "test": "midway-bin test --ts",
     "cov": "midway-bin cov --ts",
-    "ci": "npm run test"
+    "ci": "npm run test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "midway",
@@ -42,11 +44,13 @@
     "lodash": "^4.17.10",
     "reflect-metadata": "^0.1.12",
     "uuid": "^3.2.1",
-    "xmldom": "^0.1.27"
+    "xmldom": "^0.1.27",
+    "snyk": "^1.189.0"
   },
   "author": "Harry Chen <czy88840616@gmail.com>",
   "repository": {
     "type": "git",
     "url": "http://github.com/midwayjs/midway.git"
-  }
+  },
+  "snyk": true
 }

@@ -2,7 +2,8 @@
   "name": "midway-init",
   "version": "0.6.5",
   "dependencies": {
-    "egg-init": "^1.14.0"
+    "egg-init": "^1.14.0",
+    "snyk": "^1.316.1"
   },
   "main": "lib/command.js",
   "devDependencies": {
@@ -37,7 +38,9 @@
     "test": "npm run lint && midway-bin test",
     "cov": "midway-bin cov",
     "ci": "npm run lint && midway-bin cov",
-    "autod": "autod"
+    "autod": "autod",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": ">=8.0.0"
@@ -46,5 +49,6 @@
   "repository": {
     "type": "git",
     "url": "http://github.com/midwayjs/midway.git"
-  }
+  },
+  "snyk": true
 }

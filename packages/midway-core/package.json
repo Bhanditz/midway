@@ -8,7 +8,9 @@
     "build": "npm run lint && midway-bin build -c",
     "lint": "../../node_modules/.bin/tslint --format prose -c ../../tslint.json src/**/*.ts test/**/*.ts",
     "test": "npm run lint && midway-bin clean && NODE_ENV=test midway-bin test --ts",
-    "cov": "midway-bin clean && midway-bin cov --ts"
+    "cov": "midway-bin clean && midway-bin cov --ts",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "midway",
@@ -37,11 +39,13 @@
     "globby": "^8.0.1",
     "inflection": "^1.12.0",
     "injection": "^0.6.5",
-    "is-type-of": "^1.2.0"
+    "is-type-of": "^1.2.0",
+    "snyk": "^1.316.1"
   },
   "author": "Harry Chen <czy88840616@gmail.com>",
   "repository": {
     "type": "git",
     "url": "http://github.com/midwayjs/midway.git"
-  }
+  },
+  "snyk": true
 }

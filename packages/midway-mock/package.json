@@ -38,10 +38,10 @@
   "dependencies": {
     "co": "^4.6.0",
     "debug": "^3.1.0",
-    "egg-mock": "^3.17.3",
+    "egg-mock": "^5.6.0",
     "injection": "^0.6.5",
     "is-type-of": "^1.2.0",
-    "midway-core": "^0.6.5",
+    "midway-core": "^1.20.1",
     "power-assert": "^1.6.0",
     "ready-callback": "^2.0.1"
   },

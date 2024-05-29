@@ -2,7 +2,7 @@
   "name": "midway-init",
   "version": "0.6.5",
   "dependencies": {
-    "egg-init": "^1.14.0"
+    "egg-init": "^3.0.1"
   },
   "main": "lib/command.js",
   "devDependencies": {

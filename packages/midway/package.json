@@ -29,8 +29,8 @@
   "dependencies": {
     "egg-cluster": "^1.17.0",
     "injection": "^0.6.5",
-    "midway-core": "^0.6.5",
-    "midway-web": "^0.6.5"
+    "midway-core": "^1.0.2",
+    "midway-web": "^1.0.0"
   },
   "files": [
     "bin",
